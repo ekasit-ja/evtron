@@ -1,3 +1,13 @@
+@font-face {
+    src: url('fonts/FC Subject Rounded Regular.ttf');
+    font-family: 'fc-subject-rounded';
+}
+
+body {
+    font-family: 'fc-subject-rounded';
+    font-size: 1.1rem;
+}
+
 $evblue: #035096;
 $black: rgb(51,51,51);
 $grey: rgb(153,153,153);
@@ -9,16 +19,12 @@ $project-padding: 1rem;
 $news-padding: 1rem;
 $pill-padding: 1rem;
 
-html {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif ;
-    // font-size: 14px;
-}
-
 // @import 'partials/card.scss';
 // @import 'partials/contact.scss';
 @import 'partials/navbar.scss';
 @import 'partials/footer.scss';
 @import 'partials/page.scss';
+@import 'partials/home.scss';
 // @import 'partials/carousel.scss';
 // @import 'partials/finance.scss';
 // @import 'partials/modal.scss';

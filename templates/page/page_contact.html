@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block content %}
+    <br>
+    <div class="container">
+        <h3 class="text-center text-capitalize">{% trans 'contact-us' %}</h3>
+        <br>
+
+        <div class="row">
+            <div class="col-md-5">
+                <div class="contact-card">
+                    <h3 class="text-uppercase">{% trans 'pcj-industries-full' %}</h3>
+                    <h3 class="text-uppercase">({% trans 'headquarters' %})</h3>
+                    <br>
+                    <p>
+                        {% trans 'pcj-office-road' %}<br>
+                        {% trans 'pcj-office-area' %}<br>
+                        {% trans 'pcj-office-province' %}<br>
+                        {% trans 'pcj-office-work-hour' %}
+                    </p>
+
+                    <p>
+                        <span class="icon-phone-alt"></span>&nbsp;
+                        {% if LANG == 'en' %}
+                            <a href="tel:{{PHONE1_en}}">{{PHONE1_en}}</a>,&nbsp;
+                            <a href="tel:{{PHONE2_en}}">{{PHONE2_en}}</a>
+                        {% else %}
+                            <a href="tel:{{PHONE1_th}}">{{PHONE1_th}}</a>,&nbsp;
+                            <a href="tel:{{PHONE2_th}}">{{PHONE2_th}}</a>
+                        {% endif %}
+                        <br>
+                        <span class="icon-fax"></span>&nbsp;
+                        {% if LANG == 'en' %}
+                            <a href="tel:{{FAX_en}}">{{FAX_en}}</a>
+                        {% else %}
+                            <a href="tel:{{FAX_th}}">{{FAX_th}}</a>
+                        {% endif %}
+                        <br>
+                        <span class="icon-envelope"></span>&nbsp;
+                        <a href="mailto:{{EMAIL_SALES}}">{{EMAIL_SALES}}</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-7 map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.17815034861803!2d100.55958969822574!3d13.787890070907615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c3900acb641%3A0x9bc8d88eddc2c0e8!2z4Lia4Lij4Li04Lip4Lix4LiXIOC4nuC4teC4i-C4teC5gOC4iCDguK3guLjguJXguKrguLLguKvguIHguKPguKPguKEg4LiI4Liz4LiB4Lix4LiU!5e0!3m2!1sen!2sus!4v1562645964776!5m2!1sen!2sus"></iframe>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5">
+                <div class="contact-card">
+                    <h3 class="text-uppercase">{% trans 'factory' %}</h3>
+                    <br>
+                    <p>
+                        {% trans 'pcj-factory-road' %}<br>
+                        {% trans 'pcj-factory-area' %}<br>
+                        {% trans 'pcj-factory-province' %}<br>
+                        {% trans 'pcj-factory-work-hour' %}
+                    </p>
+                    <p>
+                        <span class="icon-phone-alt"></span>&nbsp;
+                        {% if LANG == 'en' %}
+                            <a href="tel:{{PHONE_FACTORY_en}}">{{PHONE_FACTORY_en}}</a>
+                        {% else %}
+                            <a href="tel:{{PHONE_FACTORY_th}}">{{PHONE_FACTORY_th}}</a>
+                        {% endif %}
+                        <br>
+                        <span class="icon-envelope"></span>&nbsp;
+                        <a href="mailto:{{EMAIL_SALES}}">{{EMAIL_SALES}}</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-7 map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.7119250116843!2d101.01420212434525!3d14.615479504509283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311ddd1af4ee16c1%3A0xd3f0ffd50ee206fd!2sPCJ+Industry+Co.%2C+Ltd.!5e0!3m2!1sen!2s!4v1469268505549"></iframe>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

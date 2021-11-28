@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block content %}
+    <br>
+    <div class="container">
+        <h3 class="text-center text-capitalize">{% trans 'career' %}</h3>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-justify">
+                <p>
+                    {% trans 'career-content-1' %}
+                    <span class="email-career">
+                        <span class="icon-envelope"></span> <a href="mailto:{{EMAIL_CAREER}}">{{EMAIL_CAREER}}</a>
+                    </span>
+                    {% trans 'career-content-2' %}
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="contact-card">
+                    <h3 class="text-uppercase">{% trans 'pcj-industries-full' %}</h3>
+                    <h3 class="text-uppercase">({% trans 'headquarters' %})</h3>
+                    <br>
+                    <p>
+                        {% trans 'pcj-office-road' %}<br>
+                        {% trans 'pcj-office-area' %}<br>
+                        {% trans 'pcj-office-province' %}<br>
+                        {% trans 'pcj-office-work-hour' %}
+                    </p>
+
+                    <p>
+                        <span class="icon-phone-alt"></span>&nbsp;
+                        {% if LANG == 'en' %}
+                            <a href="tel:{{PHONE1_en}}">{{PHONE1_en}}</a>,&nbsp;
+                            <a href="tel:{{PHONE2_en}}">{{PHONE2_en}}</a>
+                        {% else %}
+                            <a href="tel:{{PHONE1_th}}">{{PHONE1_th}}</a>,&nbsp;
+                            <a href="tel:{{PHONE2_th}}">{{PHONE2_th}}</a>
+                        {% endif %}
+                        <br>
+                        <span class="icon-fax"></span>&nbsp;
+                        {% if LANG == 'en' %}
+                            <a href="tel:{{FAX_en}}">{{FAX_en}}</a>
+                        {% else %}
+                            <a href="tel:{{FAX_th}}">{{FAX_th}}</a>
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-7 map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.17815034861803!2d100.55958969822574!3d13.787890070907615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c3900acb641%3A0x9bc8d88eddc2c0e8!2z4Lia4Lij4Li04Lip4Lix4LiXIOC4nuC4teC4i-C4teC5gOC4iCDguK3guLjguJXguKrguLLguKvguIHguKPguKPguKEg4LiI4Liz4LiB4Lix4LiU!5e0!3m2!1sen!2sus!4v1562645964776!5m2!1sen!2sus"></iframe>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h5 class="text-center">{% trans 'job-positions-available' %}</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul style="margin-bottom: 0">
+                            <li>{% trans 'Sales Executive(lnternational)' %}</li>
+                            <li>{% trans 'Sales Executive(Domestic)' %}</li>
+                            <li>{% trans 'Sales Coordinator' %}</li>
+                            <li>{% trans 'Marketing Executive' %}</li>
+                            <li>{% trans 'Purchasing Admin.' %}</li>
+                            <li>{% trans 'Accountant' %}</li>
+                            <li>{% trans 'Finance Staff' %}</li>
+                            <li>{% trans 'HR Admin.' %}</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>{% trans 'Production Engineer' %}</li>
+                            <li>{% trans 'R&D Engineer' %}</li>
+                            <li>{% trans 'QA Engineer' %}</li>
+                            <li>{% trans 'Construction & Maintenance Engineer' %}</li>
+                            <li>{% trans 'CAD Operator' %}</li>
+                            <li>{% trans 'Operator/Technician' %}</li>
+                            <li>{% trans 'Warehouse Admin.' %}</li>
+                            <li>{% trans 'Production Admin.' %}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

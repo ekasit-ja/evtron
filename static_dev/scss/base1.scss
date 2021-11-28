@@ -1,0 +1,25 @@
+$black: rgb(51,51,51);
+$grey: rgb(153,153,153);
+$super-light-grey: rgb(241,241,241);
+$light-grey: rgb(202,202,202);
+$red: rgb(209,25,25);
+$product-padding: 0.5em;
+$project-padding: 1em;
+$news-padding: 1em;
+$pill-padding: 1em;
+
+html {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif ;
+    font-size: 14px;
+}
+
+// @import 'partials/card.scss';
+// @import 'partials/contact.scss';
+// @import 'partials/footer.scss';
+// @import 'partials/navbar.scss';
+@import 'partials/page.scss';
+// @import 'partials/carousel.scss';
+// @import 'partials/finance.scss';
+// @import 'partials/modal.scss';
+// @import 'partials/news.scss';
+// @import 'partials/product.scss';

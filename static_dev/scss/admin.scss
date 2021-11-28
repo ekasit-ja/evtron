@@ -1,0 +1,19 @@
+$image-preview-width: 150px;
+$image-preview-height: 50px;
+
+th, td {
+    &.field-image_preview {
+        width: $image-preview-width;
+
+        div {
+            width: $image-preview-width;
+            height: $image-preview-height;
+            overflow: hidden;
+        }
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+}

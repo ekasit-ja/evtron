@@ -1,0 +1,6 @@
+
+### Git ignore configuration
+
+# Django files
+*.pyc
+__pycache__/

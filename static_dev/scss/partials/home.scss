@@ -22,6 +22,14 @@
 }
 
 .row .product {
+    text-decoration: none;
+    color: black;
+
+    transition: box-shadow 0.2s ease;
+    &:hover {
+        box-shadow: 0 0 10px 3px rgba($evblue,.5);
+    }
+
     text-align: center;
     margin: 0 1rem 2rem 1rem;
     padding: 0.5rem;

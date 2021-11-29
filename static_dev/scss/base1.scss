@@ -3,10 +3,11 @@
     font-family: 'fc-subject-rounded';
 }
 
-body {
-    font-family: 'fc-subject-rounded';
-    font-size: 1.0rem;
-}
+html {font-size: 18px;}
+body {font-family: 'fc-subject-rounded';}
+h1 {font-size: 2.2rem;}
+h2 {font-size: 1.8rem;}
+h3 {font-size: 1.5rem;}
 
 $evblue: rgb(3, 86, 144);
 $black: rgb(51,51,51);

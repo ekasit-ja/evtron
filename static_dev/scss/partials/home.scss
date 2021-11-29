@@ -11,10 +11,12 @@
     }
 }
 
-.benefits-frame {
+.img-frame {
 	text-align: center;
 
-	img {max-height: 100px;}
+    &.h100 {img {max-height: 100px;}}
+    &.h200 {img {max-height: 200px;}}
+    &.h300 {img {max-height: 300px; max-width: 300px;}}
 }
 
 .product-list {
@@ -30,10 +32,7 @@
         box-shadow: 0 0 10px 3px rgba($evblue,.5);
     }
 
-    text-align: center;
     margin: 0 1rem 2rem 1rem;
     padding: 0.5rem;
     background-color: white;
-
-    img {max-height: 300px;}
 }

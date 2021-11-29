@@ -14,7 +14,18 @@
 .benefits-frame {
 	text-align: center;
 
-	img {
-		max-height: 100px;
-	}
+	img {max-height: 100px;}
+}
+
+.product-list {
+    background-color: rgba($evblue,0.3);
+}
+
+.row .product {
+    text-align: center;
+    margin: 0 1rem 2rem 1rem;
+    padding: 0.5rem;
+    background-color: white;
+
+    img {max-height: 300px;}
 }

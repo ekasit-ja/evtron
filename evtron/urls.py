@@ -28,7 +28,7 @@ urlpatterns = i18n_patterns(
     # path('finance/', include('finance.urls')),
     # path('news/', include('news.urls')),
     path('', include('page.urls')),
-    # path('product/', include('product.urls')),
+    path('product/', include('product.urls')),
     # path('project/', include('project.urls')),
 
     path('webmail/', RedirectView.as_view(url='https://www.pcjindustries.co.th:2096/')),

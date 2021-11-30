@@ -1,6 +1,21 @@
 .bg-evblue {background-color: $evblue;}
 
-.navbar .megamenu{ padding: 1rem; }
+.navbar .megamenu {
+    padding: 1rem;
+
+    .dropdown-item {
+        transition: box-shadow 0.2s ease;
+
+        &:hover,&:focus {
+            background-color: white;
+            box-shadow: 0 0 10px 3px rgba($evblue,.5);
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
 
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
@@ -25,7 +40,7 @@
 
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu{ display: none; }
+    // .navbar .nav-item .dropdown-menu{ display: none; }
     .navbar .nav-item:hover .dropdown-menu{ display: block;}
     .navbar .nav-item .dropdown-menu{ margin-top:0;}
 }   

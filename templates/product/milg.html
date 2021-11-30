@@ -3,8 +3,61 @@
 
 {% block content %}
 
-<div class="container">
-hello
+<div class="container-fluid">
+    <div class="container">
+        <div class="header row my-3 justify-content-center justify-content-lg-start">
+            <div class="col-auto align-self-center">
+                <img src="{% static 'images/logo-ev.png' %}">
+                <h2>รุ่น EV-3000-1</h2>
+            </div>
+            <div class="d-none d-lg-flex col align-self-center">
+                <div class="strip"></div>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="main-img">
+                <img src="{% static 'images/products/milg.jpg' %}">
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <span>มีให้เลือก 5 สี (แดง | น้ำเงิน | เทา | ขาว | ดำ)</span>
+        </div>
+
+        <div class="row">
+            <div class="col text-center align-self-center"><h3>ข้อมูลจำเพาะ</h3></div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">กำลังมอเตอร์ไฟฟ้า</div><div class="col">3000 วัตต์</div>
+                </div>
+                <div class="row">
+                    <div class="col">ความเร็วสูงสุด </div><div class="col">75 กิโลเมตร/ชั่วโมง</div>
+                </div>
+                <div class="row">
+                    <div class="col">ขนาดยางล้อหน้า</div><div class="col">90/70-12</div>
+                </div>
+                <div class="row">
+                    <div class="col">ขนาดยางล้อหลัง</div><div class="col">90/70-12</div>
+                </div>
+                <div class="row">
+                    <div class="col">เบรคหน้า</div><div class="col">ดิสเบรค</div>
+                </div>
+                <div class="row">
+                    <div class="col">เบรคหลัง</div><div class="col">ดิสเบรค</div>
+                </div>
+                <div class="row">
+                    <div class="col">ขนาดโดยรวม</div><div class="col">1900x760x1100 มม.</div>
+                </div>
+                <div class="row">
+                    <div class="col">น้ำหนักรถเปล่า</div><div class="col">70 กิโลกรัม</div>
+                </div>
+                <div class="row">
+                    <div class="col">น้ำหนักบรรทุกสูงสุด</div><div class="col">200 กิโลกรัม</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 {% endblock %}

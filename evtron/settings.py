@@ -14,6 +14,7 @@ from pathlib import Path
 
 import os
 from .constants import *
+from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -56,6 +57,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
 
+    'evtron.middleware.force_default_language_middleware.ForceDefaultLanguageMiddleware',
     'django.middleware.locale.LocaleMiddleware',
 
     'django.middleware.common.CommonMiddleware',
@@ -121,7 +123,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'th'
+
+LANGUAGES = (
+  ('th', _('Thai')),
+  ('en', _('English')),
+)
 
 TIME_ZONE = 'UTC'
 

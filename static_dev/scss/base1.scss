@@ -9,6 +9,9 @@ h1 {font-size: 2.2rem;}
 h2 {font-size: 1.8rem;}
 h3 {font-size: 1.5rem;}
 
+a {text-decoration: none;}
+a.underline:hover {text-decoration: underline;}
+
 $evblue: rgb(3, 86, 144);
 $black: rgb(51,51,51);
 $grey: rgb(153,153,153);

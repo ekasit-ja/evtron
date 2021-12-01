@@ -83,6 +83,18 @@
             </div>
         </div>
 
+        <div class="row my-5">
+            <h2 class="text-center">สนใจติดต่อ
+                {% if LANG == 'en' %}
+                    <a href="tel:{{PHONE1_en}}" class="mx-1 underline" >{{PHONE1_en}}</a>,
+                    <a href="tel:{{PHONE2_en}}" class="mx-1 underline" >{{PHONE2_en}}</a>
+                {% else %}
+                    <a href="tel:{{PHONE1_th}}" class="mx-1 underline" >{{PHONE1_th}}</a>,&nbsp;
+                    <a href="tel:{{PHONE2_th}}" class="mx-1 underline" >{{PHONE2_th}}</a>
+                {% endif %}
+            </h2>
+        </div>
+
     </div>
 </div>
 

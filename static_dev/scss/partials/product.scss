@@ -15,3 +15,52 @@
         max-height: 500px;
     }
 }
+
+@media all and (min-width: 992px) {
+    .battery-row .col:first-child {border-right: 1px solid silver;}
+}
+
+@media all and (max-width: 991px) {
+    .spec-table {margin: 0 auto;}
+}
+
+.spec-table {
+    tr td:first-child {padding-right: 3rem;}
+}
+
+.battery-row {h3 {width: auto;}}
+.battery-div {
+    width: auto;
+    margin: 0 1rem 1rem 1rem;
+    padding: 1rem;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+
+.battery-table {display: inline-block;}
+
+.circle-color {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1.5rem;
+    vertical-align: -7px;
+    margin: 0 0.2rem 0 0.5rem;
+
+    &.red {
+        background-color: red;
+    }
+    &.blue {
+        background-color: blue;
+    }
+    &.grey {
+        background-color: gray;
+    }
+    &.white {
+        background-color: white;
+        border: 1px solid silver;
+    }
+    &.black {
+        background-color: black;
+    }
+}

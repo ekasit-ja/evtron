@@ -15,48 +15,74 @@
             </div>
         </div>
 
-        <div class="row text-center">
+        <div class="row text-center mb-4">
             <div class="main-img">
                 <img src="{% static 'images/products/milg.jpg' %}">
             </div>
         </div>
 
-        <div class="row text-center">
-            <span>มีให้เลือก 5 สี (แดง | น้ำเงิน | เทา | ขาว | ดำ)</span>
+        <div class="row text-center mb-4">
+            <span>
+                มีให้เลือก 5 สี (
+                <a class="circle-color red"></a>แดง |
+                <a class="circle-color blue"></a>น้ำเงิน |
+                <a class="circle-color grey"></a>เทา |
+                <a class="circle-color white"></a>ขาว |
+                <a class="circle-color black"></a>ดำ)
+            </span>
         </div>
 
-        <div class="row">
-            <div class="col text-center align-self-center"><h3>ข้อมูลจำเพาะ</h3></div>
-            <div class="col">
-                <div class="row">
-                    <div class="col">กำลังมอเตอร์ไฟฟ้า</div><div class="col">3000 วัตต์</div>
-                </div>
-                <div class="row">
-                    <div class="col">ความเร็วสูงสุด </div><div class="col">75 กิโลเมตร/ชั่วโมง</div>
-                </div>
-                <div class="row">
-                    <div class="col">ขนาดยางล้อหน้า</div><div class="col">90/70-12</div>
-                </div>
-                <div class="row">
-                    <div class="col">ขนาดยางล้อหลัง</div><div class="col">90/70-12</div>
-                </div>
-                <div class="row">
-                    <div class="col">เบรคหน้า</div><div class="col">ดิสเบรค</div>
-                </div>
-                <div class="row">
-                    <div class="col">เบรคหลัง</div><div class="col">ดิสเบรค</div>
-                </div>
-                <div class="row">
-                    <div class="col">ขนาดโดยรวม</div><div class="col">1900x760x1100 มม.</div>
-                </div>
-                <div class="row">
-                    <div class="col">น้ำหนักรถเปล่า</div><div class="col">70 กิโลกรัม</div>
-                </div>
-                <div class="row">
-                    <div class="col">น้ำหนักบรรทุกสูงสุด</div><div class="col">200 กิโลกรัม</div>
-                </div>
+        <div class="row mb-4 justify-content-center">
+            <div class="col-12 col-lg-6 text-center align-self-center"><h3>ข้อมูลจำเพาะ</h3></div>
+            <div class="col-12 col-lg-6">
+                <table class="spec-table">
+                    <tr><td>กำลังมอเตอร์ไฟฟ้า</td><td>3000 วัตต์</td></tr>
+                    <tr><td>ความเร็วสูงสุด </td><td>75 กิโลเมตร/ชั่วโมง</td></tr>
+                    <tr><td>ขนาดยางล้อหน้า</td><td>90/70-12</td></tr>
+                    <tr><td>ขนาดยางล้อหลัง</td><td>90/70-12</td></tr>
+                    <tr><td>เบรคหน้า</td><td>ดิสเบรค</td></tr>
+                    <tr><td>เบรคหลัง</td><td>ดิสเบรค</td></tr>
+                    <tr><td>ขนาดโดยรวม</td><td>1900x760x1100 มม.</td></tr>
+                    <tr><td>น้ำหนักรถเปล่า</td><td>70 กิโลกรัม</td></tr>
+                    <tr><td>น้ำหนักบรรทุกสูงสุด</td><td>200 กิโลกรัม</td></tr>
+                </table>
             </div>
         </div>
+
+        <hr class="mb-4">
+
+        <div class="row mb-3 text-center">
+            <h2>แบตเตอรี่ (มีให้เลือก 2 ขนาด)</h2>
+        </div>
+
+        <div class="row mb-4 battery-row">
+            <div class="col d-flex flex-column">
+                <div class="row d-flex justify-content-center">
+                    <div class="battery-div">
+                        <table class="spec-table battery-table">
+                            <tr><td>ชนิดแบตเตอรี่</td><td>Lithium NMC</td></tr>
+                            <tr><td>ความจุแบตเตอรี่</td><td>72V 20Ah</td></tr>
+                            <tr><td>ระยะทาง<br>ต่อการชาร์จ 1 ครั้ง</td><td>XX กิโลเมตร*<br>(ขึ้นอยู่กับการใช้งาน)</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center"><h3>รุ่น EV3000/72-20</h3></div>
+            </div>
+            <div class="d-block d-lg-none my-4"></div>
+            <div class="col d-flex flex-column">
+                <div class="row d-flex justify-content-center">
+                    <div class="battery-div">
+                        <table class="spec-table battery-table">
+                            <tr><td>ชนิดแบตเตอรี่</td><td>Lithium NMC</td></tr>
+                            <tr><td>ความจุแบตเตอรี่</td><td>72V 40Ah</td></tr>
+                            <tr><td>ระยะทาง<br>ต่อการชาร์จ 1 ครั้ง</td><td>XX กิโลเมตร*<br>(ขึ้นอยู่กับการใช้งาน)</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center"><h3>รุ่น EV3000/72-40</h3></div>
+            </div>
+        </div>
+
     </div>
 </div>
 

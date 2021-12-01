@@ -1,5 +1,8 @@
-.contact > div {
-    padding: 0 0.5rem 1rem 0.5rem;
+.contact {
+    & > div {padding: 0 0.5rem 1rem 0.5rem;}
+
+    & a {text-decoration: none;}
+    & a:hover {text-decoration: underline;}
 }
 
 .map {

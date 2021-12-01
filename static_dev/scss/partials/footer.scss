@@ -6,6 +6,7 @@
     padding-bottom: 1rem;
 
     a {color: white; text-decoration: none;}
+    a:hover:not(.sub-button) {text-decoration: underline;}
 
     .sub-button {
         display: inline-block;

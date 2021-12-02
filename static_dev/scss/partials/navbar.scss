@@ -1,5 +1,10 @@
 .bg-evblue {background-color: $evblue;}
 
+.nav-item.flag img {
+    max-height: 25px;
+    max-width: 25px;
+}
+
 .navbar .megamenu {
     padding: 1rem;
 

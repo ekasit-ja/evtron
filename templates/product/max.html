@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="container">
+        <br>
+        <div class="header row my-3 justify-content-center justify-content-lg-start">
+            <div class="d-none d-lg-flex col align-self-center"><div class="strip"></div></div>
+            <div class="col-auto align-self-center">
+                <h1 class="model">MAX</h1>
+            </div>
+            <div class="d-none d-lg-flex col align-self-center"><div class="strip"></div></div>
+        </div>
+
+        <div class="row text-center mb-4">
+            <div class="main-img">
+                <img src="{% static 'images/products/max1.jpg' %}">
+            </div>
+        </div>
+
+        <div class="row text-center mb-4 py-2">
+            <span>
+                มีให้เลือก 3 สี (
+                <button class="circle-color red"></button>แดง |
+                <button class="circle-color yellow"></button>เหลือง |
+                <button class="circle-color white"></button>ขาว )
+            </span>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-12 col-lg-4 text-center align-self-center"><h3>ข้อมูลจำเพาะ</h3></div>
+            <div class="col-12 col-lg-6">
+                <table class="spec-table">
+                    <tr><td>กำลังมอเตอร์ไฟฟ้า</td><td>5000 วัตต์</td></tr>
+                    <tr><td>ความเร็วสูงสุด </td><td>100 กิโลเมตร/ชั่วโมง</td></tr>
+                    <tr><td>ชนิดแบตเตอรี่</td><td>Lithium NMC</td></tr>
+                    <tr><td>ความจุแบตเตอรี่</td><td>72V 80Ah</td></tr>
+                    <tr><td>ระยะทางต่อการชาร์จ 1 ครั้ง</td><td>170 กิโลเมตร* (ขึ้นอยู่กับการใช้งาน)</td></tr>
+                    <tr><td>ขนาดยางล้อหน้า</td><td>130/60-13</td></tr>
+                    <tr><td>ขนาดยางล้อหลัง</td><td>130/70-12</td></tr>
+                    <tr><td>เบรคหน้า</td><td>ดิสเบรค</td></tr>
+                    <tr><td>เบรคหลัง</td><td>ดิสเบรค</td></tr>
+                    <tr><td>ขนาดโดยรวม</td><td>2000x650x1190 มม.</td></tr>
+                    <tr><td>น้ำหนักรถเปล่า</td><td>115 กิโลกรัม</td></tr>
+                    <tr><td>น้ำหนักบรรทุกสูงสุด</td><td>220 กิโลกรัม</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <hr class="mt-5 mb-4">
+
+
+        <div class="row my-5">
+            <h2 class="text-center">สนใจติดต่อ
+                {% if LANG == 'en' %}
+                    <a href="tel:{{PHONE1_en}}" class="mx-1 underline" >{{PHONE1_en}}</a>,
+                    <a href="tel:{{PHONE2_en}}" class="mx-1 underline" >{{PHONE2_en}}</a>
+                {% else %}
+                    <a href="tel:{{PHONE1_th}}" class="mx-1 underline" >{{PHONE1_th}}</a>,&nbsp;
+                    <a href="tel:{{PHONE2_th}}" class="mx-1 underline" >{{PHONE2_th}}</a>
+                {% endif %}
+            </h2>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

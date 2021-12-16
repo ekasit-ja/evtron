@@ -10,6 +10,8 @@
 
     .dropdown-item {
         transition: box-shadow 0.2s ease;
+        border: 1px solid rgba($evblue,.25);
+        border-radius: .5rem;
 
         &:hover,&:focus {
             background-color: white;

@@ -11,6 +11,17 @@
     }
 }
 
+.about-line {
+    background-color: rgba(gray,.1);
+
+    .row {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    img {border-radius: 1rem;}
+}
+
 .img-frame {
 	text-align: center;
 

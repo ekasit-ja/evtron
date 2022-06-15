@@ -15,9 +15,11 @@
 }
 
 .main-img {
+    width: inherit;
+
     img {
         max-width: 100%;
-        max-height: 500px;
+        max-height: 400px;
     }
 }
 
@@ -31,6 +33,19 @@
 
 .spec-table {
     tr td:first-child {padding-right: 2rem;}
+}
+
+table.option-model-table {
+    width: 100%;
+    table-layout: fixed;
+
+    &, th, td {
+        border: 1px solid rgb(200, 200, 200);
+    }
+
+    tr:nth-child(even) {
+        background-color: rgb(240, 240, 240);
+    }
 }
 
 .battery-row {h3 {width: auto;}}
@@ -65,17 +80,50 @@
     &.pink {
         background-color: pink;
     }
-    &.windblue {
-        background-color: $windblue;
-    }
     &.grey {
         background-color: gray;
     }
     &.white {
-        background-color: white;
+        background-color: rgb(238, 238, 238);
         border: 1px solid silver;
     }
     &.black {
         background-color: black;
+    }
+    &.wind_red {
+        background-color: rgb(201, 2, 45);
+    }
+    &.wind_blue {
+        background-color: rgb(0, 92, 203);
+    }
+    &.wind_pink {
+        background-color: rgb(201, 177, 205);
+    }
+    &.move_grey {
+        background-color: rgb(99, 99, 101);
+    }
+    &.move_green {
+        background-color: rgb(118, 191, 200);
+    }
+    &.carry_red {
+        background-color: rgb(214, 47, 55);
+    }
+    &.carry_grey {
+        background-color: rgb(160, 160, 160);
+    }
+    &.max_orange {
+        background-color: rgb(254, 82, 23);
+    }
+    &.max_blue {
+        background-color: rgb(54, 136, 241);
+    }
+    &.flash_red {
+        background-color: rgb(220, 5, 53);
+    }
+    &.flash_blue {
+        background-color: rgb(45, 122, 190);
+    }
+    &.flash_grey {
+        background-color: rgb(71, 76, 82);
     }
 }

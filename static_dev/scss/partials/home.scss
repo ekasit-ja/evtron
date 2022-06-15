@@ -27,7 +27,7 @@
 
     &.h100 {img {max-height: 100px;}}
     &.h200 {img {max-height: 200px;}}
-    &.h250 {img {max-height: 250px; max-width: 250px;}}
+    &.h250 {img {max-height: 250px; max-width: inherit;}}
     &.h300 {img {max-height: 300px; max-width: 300px;}}
 }
 

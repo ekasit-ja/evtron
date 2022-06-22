@@ -73,7 +73,7 @@ WantedBy=multi-user.target
 9. execute `systemctl daemon-reload` to inform system there is change from service files
 
 ---
-### Noted that if we already deployed PCJ INDUTRIES website before, skip step 10-11 and add directive `server {...}` from step 12 instead of editing existing one.
+### Noted that if we already deployed PCJ INDUSTRIES website before, skip step 10-11 and add directive `server {...}` from step 12 instead of editing existing one.
 ---
 
 10. install NGINX with `yum install nginx`

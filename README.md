@@ -135,32 +135,16 @@ at this point, we can use `service [nginx, uwsgi2] [start, stop, restart]`
 
 ---
 
+### From this point onward, `certbot` is already installed from PCJ INDUSTRIES main website.  Hence, some instructions need to be adjust due to existence of files and apps.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 ### SSL for https
 We will use **certbot** software to handle **Let’s Encrypt** certificate automatically.
 1. install certbot by executing `yum install certbot python2-certbot-nginx`
 2. then `certbot --nginx` to let certbot configure NGINX automatically
 3. certbot will put check key on `/root/static` by default (called webroot-path). However, we do not let nginx have root access.  So we have to change webroot-path by `certbot certonly --webroot -w /home/ekasit/pcjevtron -d www.pcjevtron.com,pcjevtron.com` then choose option 2 (renew and replace cert) (use only 1 -d to create just 1 domain for all 3 addresses. There should be only 1 certificate folder which is `www.pcjevtron.com`)
-4. we have to force all `non-www` to `www` as well as provide `.well-known` path by changing below
+4. we have to force all `non-www` to `www` by changing below
 ```
 location / {
     include uwsgi_params;
@@ -189,24 +173,7 @@ include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
 ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
 ```
 5. comment out line `listen 80;` in main `server` directive
-6. in server directive which listen to port 80, change
-```
-server {
-if ($host = www.pcjindustries.co.th) {
-    return 301 https://$host$request_uri;
-} # managed by Certbot
-
-
-if ($host = server.pcjindustries.co.th) {
-    return 301 https://$host$request_uri;
-} # managed by Certbot
-
-
-if ($host = pcjindustries.co.th) {
-    return 301 https://$host$request_uri;
-} # managed by Certbot
-```
-to
+6. in server directive which listen to port 80, add
 ```
 if ($host = www.pcjevtron.com) {
     return 301 https://www.pcjevtron.com$request_uri;
@@ -222,6 +189,14 @@ if ($host = pcjevtron.com) {
     return 301 https://www.pcjevtron.com$request_uri;
 } # managed by Certbot
 ```
+7. update `server_name` directive from
+```
+server_name    pcjindustries.co.th www.pcjindustries.co.th server.pcjindustries.co.th;
+```
+to
+```
+server_name    pcjindustries.co.th www.pcjindustries.co.th server.pcjindustries.co.th pcjevtron.com www.pcjevtron.com;
+```
 7. restart NGINX with `service nginx restart` and execute `certbot renew --dry-run` to check if renewal succeed or not.
 8. set job to auto-renew certificate by executing `crontab -e`. cronjob file will be opened
 9. then put `0 4 2 * * /usr/bin/certbot renew >> /home/ekasit/pcj-django/site/renew_cert.log 2>&1` on the last line. (it means every month, on 2nd day at 04.00, execute `certbot renew` and log it in that file either output is normal or error)
@@ -231,7 +206,7 @@ if ($host = pcjevtron.com) {
 ### Auto restart service
 After long period of deployment time, service alawys crashes for unknown reason.  Therefore, we need to restart service automatically by `crontab`.  Thus set up to restart the service daily.
 1. Open file `/var/spool/cron/root`
-2. add `0 4 * * * /home/ekasit/pcj-django/source/daily_restart.sh >> /home/ekasit/pcj-django/site/daily_restart.log 2>&1` on the last line
+2. add `0 4 * * * /home/ekasit/pcjevtron/source/daily_restart.sh >> /home/ekasit/pcjevtron/site/daily_restart.log 2>&1` on the last line
 3. save the file
 4. change permission of `daily_restart.sh` file in source code folder to 744 (executable by owner)
 
@@ -239,5 +214,5 @@ After long period of deployment time, service alawys crashes for unknown reason.
 
 ### Before signing off & Every later update
 1. Do not forget to change `DEBUG=False` in `settings.py`
-2. execute `python3 manange.py collectstatic` (under virtual environment) to collect all updated static files
-3. and restart both services with `service nginx restart && service uwsgi restart`
+2. execute `python3 manage.py collectstatic` (under virtual environment) to collect all updated static files
+3. and restart both services with `service nginx restart && service uwsgi2 restart`

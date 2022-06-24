@@ -836,3 +836,74 @@ msgstr "Air Filter"
 
 msgid "vdo-gallery"
 msgstr "Video Gallery"
+
+################################################################################
+
+msgid "about-evtron"
+msgstr "about EVTRON"
+
+msgid "about-evtron-content"
+msgstr "EVTRON is one of Thai manufacturer and distributor of electric motorcycles.  Our objective is to push forward change of electric vehicles which consume clean energy, reduce greenhouse gas emission, for a better place and a better world for everyone."
+
+msgid "compare-ice-ev"
+msgstr "Comparison between Electric Motorcycle and Internal Combustion Engine Motorcycle"
+
+msgid "cost-saving"
+msgstr "Cost Saving"
+
+msgid "cost-saving-content-1"
+msgstr "Electric motorcycles are more energy efficient than internal combustion engine (ICE) motorcycles.  In general, motorcyclists drive approximately 50 kilometers per day which we can compare expense as below table."
+
+msgid "cost-saving-content-2"
+msgstr "It can be seen that electric motorcycles can reduce expenditure up to 2,200-200 = 2,000 THB/month or 24,000 THB/year!  This does NOT include maintenance cost which that of ICE motorcycles are usually significantly higher due to larger number of wear parts from ICE engine than electric motorcycles"
+
+msgid "ice-r1-l1"
+msgstr "125 CC"
+
+msgid "ice-r1-l2"
+msgstr "ICE Motorcycles"
+
+msgid "ev-r1-l1"
+msgstr "3000 W"
+
+msgid "ev-r1-l2"
+msgstr "Electric Motorcycle"
+
+msgid "ice-r2"
+msgstr "Fuel cost approximately 60 THB/day or 1,800 THB/month"
+
+msgid "ev-r2"
+msgstr "Energy consumption about 1.5 kWh, average price of electricity for household 4.5 THB/kWh,  total 6.75 THB/day or 200 THB/month"
+
+msgid "ice-r3"
+msgstr "Cost of engine lubricant and differential fluid approximately 400 THB/month"
+
+msgid "ev-r3"
+msgstr "0 THB/month (Electric motorcycles do not require engine lubricant and differential fluid)"
+
+msgid "ice-r4"
+msgstr "Total 2,200 THB/month"
+
+msgid "ev-r4"
+msgstr "Total 200 THB/month"
+
+msgid "low-maintenance"
+msgstr "Low Maintenance"
+
+msgid "low-maintenance-content"
+msgstr "Electric motorcycles have considerably lower number of parts than ICE motorcycles.  As a result, the electric motorcycles require lower maintenance which can save costs and reduce risk from improper maintenance and increase convenience and safety for motorcyclists."
+
+msgid "eco-friendly"
+msgstr "Eco Friendly"
+
+msgid "eco-friendly-content"
+msgstr "Electric motorcycles is solely powered by battery.  There is no combustion which requires exhaust pipe to emit harmful gas.  The harmful gas does not only endanger all lives but also cause greenhouse effect (which causes global warming).  Moreover, ICE motorcycles do make loud noise which poses a nuisance.  On the other hand, electric motorcycles neither make noise problem nor air pollution.  Thus, this will save environment as well as create a better society for everyone."
+
+msgid "models"
+msgstr "Models"
+
+msgid "legal-register"
+msgstr "All of EVTRON electric motorcycles can be registered at Department of Land Transport and legally driven on Thailand’s roads.  In addition, our electric motorcycles are easier to drive than internal combustion engine motorcycles and do not create noise nor air pollution."
+
+msgid "customer-satisfaction"
+msgstr "Moreover, we provide after sales service with experienced mechanics and engineers as well as supplying spare parts of our products.  This is to achieve the highest customer satisfaction of EVTRON."

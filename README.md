@@ -5,6 +5,8 @@ for development on Windows environments, **Git Bash** originally does not reply 
 ### Development
 for this development, we cannot use command `source bin/activate` for virtual environment.  Instead, command `source venv/Scripts/activate` has to be executed. (not sure why this change. but on CestOS server, command `source venv/bin/activate` is still valid though.)
 
+To compile locale language files, use command ` django-admin compilemessages`.
+
 ---
 
 ### Preparation for deployment

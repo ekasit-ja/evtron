@@ -25,38 +25,38 @@
 
         <div class="row text-center mb-4 py-2">
             <span>
-                มีให้เลือก 4 สี (
-                <button class="circle-color white"></button>ขาว |
-                <button class="circle-color black"></button>ดำ |
-                <button class="circle-color move_grey"></button>เทา |
-                <button class="circle-color move_green"></button>เขียว )
+                {% trans 'color-options' %} (
+                <button class="circle-color white"></button>{% trans 'white' %} |
+                <button class="circle-color black"></button>{% trans 'black' %} |
+                <button class="circle-color move_grey"></button>{% trans 'grey' %} |
+                <button class="circle-color move_green"></button>{% trans 'blue-tint' %} )
             </span>
         </div>
 
         <div class="row mb-4 justify-content-center">
             <div class="col-12 col-lg-8">
                 <table class="option-model-table text-center">
-                    <tr><th>รายละเอียด</th><th>MOVE 2000</th><th>MOVE 3000</th></tr>
-                    <tr><td>กำลังมอเตอร์ไฟฟ้า</td><td>2000 วัตต์</td><td>3000 วัตต์</td></tr>
-                    <tr><td>ความเร็วสูงสุด</td><td>70 กิโลเมตร/ชั่วโมง</td><td>80 กิโลเมตร/ชั่วโมง</td></tr>
-                    <tr><td>ความจุแบตเตอรี่</td><td>72V 30Ah</td><td>72V 40Ah</td></tr>
-                    <tr><td>ระยะทางต่อการชาร์จ 1 ครั้ง</td><td>80 กิโลเมตร*<br>(ขึ้นอยู่กับการใช้งาน)</td><td>100 กิโลเมตร*<br>(ขึ้นอยู่กับการใช้งาน)</td></tr>
-                    <tr><td>ขนาดยางล้อหน้า</td><td>3.0-10”</td><td>120/70-12</td></tr>
-                    <tr><td>ขนาดยางล้อหลัง</td><td>3.0-10”</td><td>120/70-12</td></tr>
+                    <tr><th>{% trans 'description-motor' %}</th><th>MOVE 2000</th><th>MOVE 3000</th></tr>
+                    <tr><td>{% trans 'motor' %}</td><td>2000 {% trans 'watts' %}</td><td>3000 {% trans 'watts' %}</td></tr>
+                    <tr><td>{% trans 'top-speed' %}</td><td>70 {% trans 'km-h' %}</td><td>80 {% trans 'km-h' %}</td></tr>
+                    <tr><td>{% trans 'battery-capacity' %}</td><td>72V 30Ah</td><td>72V 40Ah</td></tr>
+                    <tr><td>{% trans 'estimated-distance' %}</td><td>80 {% trans 'km-' %}<br>{% trans 'depends-on-usage' %}</td><td>100 {% trans 'km-' %}<br>{% trans 'depends-on-usage' %}</td></tr>
+                    <tr><td>{% trans 'front-tire' %}</td><td>3.0-10”</td><td>120/70-12</td></tr>
+                    <tr><td>{% trans 'rear-tire' %}</td><td>3.0-10”</td><td>120/70-12</td></tr>
                 </table>
             </div>
         </div>
 
         <div class="row mb-4 justify-content-center">
-            <div class="col-12 col-lg-4 text-center align-self-center"><h3>ข้อมูลจำเพาะ</h3></div>
+            <div class="col-12 col-lg-4 text-center align-self-center"><h3>{% trans 'specification' %}</h3></div>
             <div class="col-12 col-lg-6">
                 <table class="spec-table">
-                    <tr><td>ชนิดแบตเตอรี่</td><td>Lithium NMC</td></tr>
-                    <tr><td>เบรคหน้า</td><td>ดิสเบรค</td></tr>
-                    <tr><td>เบรคหลัง</td><td>ดิสเบรค</td></tr>
-                    <tr><td>ขนาดโดยรวม</td><td>1850x700x1050 มม.</td></tr>
-                    <tr><td>น้ำหนักรถเปล่า</td><td>80 กิโลกรัม</td></tr>
-                    <tr><td>น้ำหนักบรรทุกสูงสุด</td><td>200 กิโลกรัม</td></tr>
+                    <tr><td>{% trans 'battery-type' %}</td><td>Lithium NMC</td></tr>
+                    <tr><td>{% trans 'front-brake' %}</td><td>{% trans 'disk-brake' %}</td></tr>
+                    <tr><td>{% trans 'rear-brake' %}</td><td>{% trans 'disk-brake' %}</td></tr>
+                    <tr><td>{% trans 'dimension' %}</td><td>1850x700x1050 {% trans 'mm' %}</td></tr>
+                    <tr><td>{% trans 'net-weight' %}</td><td>80 {% trans 'kg' %}</td></tr>
+                    <tr><td>{% trans 'max-loading' %}</td><td>200 {% trans 'kg' %}</td></tr>
                 </table>
             </div>
         </div>
@@ -65,7 +65,7 @@
 
 
         <div class="row my-5">
-            <h2 class="text-center">สนใจติดต่อ
+            <h2 class="text-center">{% trans 'contact-product-page' %}
                 {% if LANG == 'en' %}
                     <a href="tel:{{PHONE1_en}}" class="mx-1 underline" >{{PHONE1_en}}</a>,
                     <a href="tel:{{PHONE2_en}}" class="mx-1 underline" >{{PHONE2_en}}</a>

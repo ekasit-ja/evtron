@@ -840,7 +840,7 @@ msgstr "Video Gallery"
 ################################################################################
 
 msgid "about-evtron"
-msgstr "about EVTRON"
+msgstr "About EVTRON"
 
 msgid "about-evtron-content"
 msgstr "EVTRON is one of Thai manufacturer and distributor of electric motorcycles.  Our objective is to push forward change of electric vehicles which consume clean energy, reduce greenhouse gas emission, for a better place and a better world for everyone."

@@ -94,8 +94,8 @@ WantedBy=multi-user.target
 12. then add below code instead
 ```
 server {
-    # allow upload file as large up to 10M #
-    client_max_body_size 10M;
+    # allow upload file as large up to 20M #
+    client_max_body_size 20M;
     listen 80;
 
     server_name    pcjevtron.com www.pcjevtron.com;

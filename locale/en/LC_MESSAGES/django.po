@@ -843,7 +843,7 @@ msgid "about-evtron"
 msgstr "About EVTRON"
 
 msgid "about-evtron-content"
-msgstr "EVTRON is a Thai manufacturer and distributor of electric motorcycles. Our commitment is to be a part of impelling (หรือ driving) Thailand to a change of vehicles consuming clean energy, reducing greenhouse gas emission for a better place and a better world for everyone."
+msgstr "EVTRON is a Thai manufacturer and distributor of electric motorcycles. Our commitment is to be a part of  driving Thailand to a change of vehicles consuming clean energy, reducing greenhouse gas emission for a better place and a better world for everyone."
 
 msgid "compare-ice-ev"
 msgstr "Comparison between Electric Motorcycle and Internal Combustion Engine Motorcycle"

@@ -50,7 +50,7 @@
                         </div>
                     </ul>
                 </li>
-                <li class="nav-item px-1"><a class="nav-link" href="{% static 'documents/Catalog, EVTRON.pdf' %}" target="_blank">{% trans 'catg' %}</a></li>
+                <li class="nav-item px-1"><a class="nav-link" href="{% static 'documents/Catalog, EVTRON '|add:LANG|add:'.pdf' %}" target="_blank">{% trans 'catg' %}</a></li>
                 <li class="nav-item px-1"><a class="nav-link" href="{% url 'page:page-contact' %}">{% trans 'contact' %}</a></li>
                 <li class="nav-item px-2 flag"><a class="nav-link" href="/th{{request.get_full_path|slice:'3:'}}">
                     <img src="{% static 'images/flag_th.png' %}">

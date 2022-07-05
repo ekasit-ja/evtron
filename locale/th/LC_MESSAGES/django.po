@@ -926,6 +926,8 @@ msgid "blue-tint"
 msgstr "ฟ้าน้ำทะเล"
 msgid "orange"
 msgstr "ส้ม"
+msgid "yellow"
+msgstr "เหลือง"
 
 msgid "specification"
 msgstr "ข้อมูลจำเพาะ"

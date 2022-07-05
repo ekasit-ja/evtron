@@ -926,6 +926,8 @@ msgid "blue-tint"
 msgstr "Blue-Tint"
 msgid "orange"
 msgstr "Orange"
+msgid "yellow"
+msgstr "Yellow"
 
 msgid "specification"
 msgstr "Specification"

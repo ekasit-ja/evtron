@@ -31,6 +31,15 @@ def product_carry(request):
         'meta_robots': 'index, follow',
     })
 
+def product_sl_carry(request):
+    return render(request, 'product/sl-carry.html' , {
+        'meta_title': _('pcj-industries-long'),
+        'meta_desc': _('meta-desc-home'),
+        'meta_kw': _('meta-kw-home'),
+        'meta_img': request.build_absolute_uri(static('images/pcj-logo-og.jpg')),
+        'meta_robots': 'index, follow',
+    })
+
 def product_max(request):
     return render(request, 'product/max.html' , {
         'meta_title': _('pcj-industries-long'),

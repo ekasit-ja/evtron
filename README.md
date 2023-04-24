@@ -43,7 +43,7 @@ chdir = /home/ekasit/pcjevtron/source
 wsgi-file = /home/ekasit/pcjevtron/source/evtron/wsgi.py
 
 http = 0.0.0.0:8000
-#socket = /home/ekasit/pcjevtron/site/tutorial.sock
+#socket = /home/ekasit/pcjevtron/site/pcjevtron.sock
 #vacuum = true
 #chown-socket = root:root
 #chmod-socket = 666
@@ -118,7 +118,7 @@ server {
 
     location / {
         include uwsgi_params;
-        uwsgi_pass unix:/home/ekasit/pcjevtron/site/tutorial.sock;
+        uwsgi_pass unix:/home/ekasit/pcjevtron/site/pcjevtron.sock;
     }
 }
 ```
@@ -150,14 +150,14 @@ We will use **certbot** software to handle **Let’s Encrypt** certificate autom
 ```
 location / {
     include uwsgi_params;
-    uwsgi_pass unix:/home/ekasit/pcjevtron/site/tutorial.sock;
+    uwsgi_pass unix:/home/ekasit/pcjevtron/site/pcjevtron.sock;
 }
 ```
 to
 ```
 location / {
     include uwsgi_params;
-    uwsgi_pass unix:/home/ekasit/pcjevtron/site/tutorial.sock;
+    uwsgi_pass unix:/home/ekasit/pcjevtron/site/pcjevtron.sock;
 }
 
 if ($host = server.pcjevtron.com) {

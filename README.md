@@ -201,7 +201,7 @@ server_name    pcjindustries.co.th www.pcjindustries.co.th server.pcjindustries.
 ```
 7. restart NGINX with `service nginx restart` and execute `certbot renew --dry-run` to check if renewal succeed or not.
 8. set job to auto-renew certificate by executing `crontab -e`. cronjob file will be opened
-9. then put `0 4 2 * * /usr/bin/certbot renew >> /home/ekasit/pcj-django/site/renew_cert.log 2>&1` on the last line. (it means every month, on 2nd day at 04.00, execute `certbot renew` and log it in that file either output is normal or error)
+9. then put `30 4 2 * * /usr/bin/certbot renew >> /home/ekasit/pcj-django/site/renew_cert.log 2>&1` on the last line. (it means every month, on 2nd day at 04.30 (try to not set same time with other job), execute `certbot renew` and log it in that file either output is normal or error)
 
 ---
 

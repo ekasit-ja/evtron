@@ -873,7 +873,7 @@ msgid "ice-r2"
 msgstr "Gasoline cost approximately 90 THB/day or 2,700 THB/month"
 
 msgid "ev-r2"
-msgstr "Electric energy consumption about 1.0 Unit, average price of electricity for household 4.0 THB/Unit,  total 4.0 THB/day or 120 THB/month"
+msgstr "Electric energy consumption about 1.0 Unit/day, average price of electricity for household 4.0 THB/Unit,  total 4.0 THB/day or 120 THB/month"
 
 msgid "ice-r3"
 msgstr "Cost of engine lubricant  approximately 140 THB/month"

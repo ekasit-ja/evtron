@@ -852,7 +852,7 @@ msgid "cost-saving"
 msgstr "Cost Saving"
 
 msgid "cost-saving-content-1"
-msgstr "Electric motorcycles are more energy-efficient than gasoline motorcycles. In general, motorcyclists drive approximately 50 kilometers per day which we can compare expenses as per below table."
+msgstr "Electric motorcycles are more energy-efficient than gasoline motorcycles. In general, motorcyclists drive approximately 40 kilometers per day which we can compare expenses as per below table."
 
 msgid "cost-saving-content-2"
 msgstr "It can be seen that electric motorcycles can reduce expenditure up to 2,840-120 = 2,720 THB/month or 32,640 THB/year!  This does NOT include maintenance cost which that of gasoline motorcycles is usually significantly higher than that of electric motorcycles due to larger number of wear parts from gasoline engine."

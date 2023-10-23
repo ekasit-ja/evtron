@@ -42,23 +42,6 @@
         </script>
         <!-- End Google tag (gtag.js) -->
 
-    </head>
-    <body>
-        {% block sdk %}
-        {% endblock sdk %}
-
-        {% include 'navbar.html' %}
-
-        {% block content %}
-        {% endblock content %}
-
-        {% include 'footer.html' %}
-
-        <script src="{% static 'bootstrap-5.1.3-dist/js/bootstrap.bundle.js' %}"></script>
-        
-        {% block extra_js %}
-        {% endblock extra_js %}
-
         <!-- Messenger Chat Plugin Code -->
         <div id="fb-root"></div>
 
@@ -90,6 +73,23 @@
           }(document, 'script', 'facebook-jssdk'));
         </script>
         <!-- End Messenger Chat Plugin Code -->
+
+    </head>
+    <body>
+        {% block sdk %}
+        {% endblock sdk %}
+
+        {% include 'navbar.html' %}
+
+        {% block content %}
+        {% endblock content %}
+
+        {% include 'footer.html' %}
+
+        <script src="{% static 'bootstrap-5.1.3-dist/js/bootstrap.bundle.js' %}"></script>
+        
+        {% block extra_js %}
+        {% endblock extra_js %}
 
     </body>
 </html>

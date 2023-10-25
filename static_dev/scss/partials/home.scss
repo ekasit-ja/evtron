@@ -11,6 +11,15 @@
     }
 }
 
+.intro-video {
+    width: 100%;
+    background-color: rgba($evblue,0.4);
+
+    video {
+        display: block;
+    }
+}
+
 .about-line {
     background-color: rgba(gray,.1);
 

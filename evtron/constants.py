@@ -53,5 +53,5 @@ def default_context(request):
         'EMAIL_SALES': 'sales@pcjevtron.com',
         'EMAIL_CAREER': 'careers@pcjindustries.co.th',
         'FACEBOOK': "https://www.facebook.com/pcjevtron/",
-        'YOUTUBE': "https://www.youtube.com/channel/UCQy-nywO1VhSm2PiMKTBajA",
+        'YOUTUBE': "https://www.youtube.com/@pcjevtron",
     }

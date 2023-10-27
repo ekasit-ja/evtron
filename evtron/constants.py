@@ -52,6 +52,6 @@ def default_context(request):
         'PHONE_FACTORY_th': '036 262 331-2',
         'EMAIL_SALES': 'sales@pcjevtron.com',
         'EMAIL_CAREER': 'careers@pcjindustries.co.th',
-        'FACEBOOK': "https://www.facebook.com/pcjindustries/",
-        'YOUTUBE': "https://www.youtube.com/channel/UCGl6i4eh4_ctQNTyeiIPssQ",
+        'FACEBOOK': "https://www.facebook.com/pcjevtron/",
+        'YOUTUBE': "https://www.youtube.com/channel/UCQy-nywO1VhSm2PiMKTBajA",
     }

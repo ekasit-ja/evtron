@@ -42,8 +42,8 @@ def default_context(request):
         # ],
 
         'LANG': get_language(),
-        'PHONE1_en': '+66 2 279 4166',
-        'PHONE1_th': '02 279 4166',
+        'PHONE1_en': '+66 2 270 1938',
+        'PHONE1_th': '02 270 1938',
         'PHONE2_en': '+66 2 616 0184',
         'PHONE2_th': '02 616 0184',
         'FAX_en': '+66 2 278 0451',

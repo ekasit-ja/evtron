@@ -16,20 +16,25 @@
 
         <div class="row text-center mb-4 justify-content-center">
             <div class="main-img">
-                <img src="{% static 'images/products/wind1.jpg' %}">
+                <img src="{% static 'images/products/wind3.jpg' %}">
             </div>
             <div class="main-img">
-                <img src="{% static 'images/products/wind2.jpg' %}">
+                <img src="{% static 'images/products/wind4.jpg' %}">
             </div>
         </div>
 
         <div class="row text-center mb-4 py-2">
             <span>
                 {% trans 'color-options' %} (
-                <button class="circle-color white"></button>{% trans 'white' %} |
-                <button class="circle-color wind_red"></button>{% trans 'red' %} |
+                <button class="circle-color wind_white_yellow"></button>{% trans 'white_yellow' %} |
+                <button class="circle-color wind_white_red"></button>{% trans 'white_red' %} |
+                <button class="circle-color wind_white_blue"></button>{% trans 'white_blue' %} |
+                <button class="circle-color wind_grey_yellow"></button>{% trans 'grey_yellow' %} |
+                <button class="circle-color wind_grey_red"></button>{% trans 'grey_red' %} |
+                <button class="circle-color wind_grey_blue"></button>{% trans 'grey_blue' %}
+                <!-- <button class="circle-color wind_red"></button>{% trans 'red' %} |
                 <button class="circle-color wind_pink"></button>{% trans 'pink-purple' %} |
-                <button class="circle-color wind_blue"></button>{% trans 'blue' %} )
+                <button class="circle-color wind_blue"></button>{% trans 'blue' %} ) -->
             </span>
         </div>
 
@@ -41,14 +46,14 @@
                     <tr><td>{% trans 'top-speed' %}</td><td>70 {% trans 'km-h' %}</td></tr>
                     <tr><td>{% trans 'battery-type' %}</td><td>Lithium NMC</td></tr>
                     <tr><td>{% trans 'battery-capacity' %}</td><td>72V 30Ah</td></tr>
-                    <tr><td>{% trans 'estimated-distance' %}</td><td>80 {% trans 'km-' %} {% trans 'avg-dist1' %} 40 {% trans 'avg-dist2' %}</td></tr>
+                    <tr><td>{% trans 'estimated-distance' %}</td><td>100 {% trans 'km-' %} {% trans 'avg-dist1' %} 40 {% trans 'avg-dist2' %}</td></tr>
                     <tr><td>{% trans 'front-tire' %}</td><td>3.0-10"</td></tr>
                     <tr><td>{% trans 'rear-tire' %}</td><td>3.0-10"</td></tr>
                     <tr><td>{% trans 'front-brake' %}</td><td>{% trans 'disk-brake' %}</td></tr>
                     <tr><td>{% trans 'rear-brake' %}</td><td>{% trans 'disk-brake' %}</td></tr>
                     <tr><td>{% trans 'dimension' %}</td><td>1750x720x1240 {% trans 'mm' %}</td></tr>
-                    <tr><td>{% trans 'net-weight' %}</td><td>70 {% trans 'kg' %}</td></tr>
-                    <tr><td>{% trans 'max-loading' %}</td><td>200 {% trans 'kg' %}</td></tr>
+                    <tr><td>{% trans 'net-weight' %}</td><td>84 {% trans 'kg' %}</td></tr>
+                    <tr><td>{% trans 'max-loading' %}</td><td>250 {% trans 'kg' %}</td></tr>
                 </table>
             </div>
         </div>

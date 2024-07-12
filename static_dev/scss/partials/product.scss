@@ -90,6 +90,7 @@ table.option-model-table {
     &.black {
         background-color: black;
     }
+
     &.wind_red {
         background-color: rgb(201, 2, 45);
     }
@@ -99,6 +100,31 @@ table.option-model-table {
     &.wind_pink {
         background-color: rgb(201, 177, 205);
     }
+    &.wind_white_yellow {
+        border: 1px solid silver;
+        background: linear-gradient(135deg, rgb(255, 255, 255) 50%, rgb(255, 208, 50) 50%);
+    }
+    &.wind_white_red {
+        border: 1px solid silver;
+        background: linear-gradient(135deg, rgb(255, 255, 255) 50%, rgb(254, 41, 37) 50%);
+    }
+    &.wind_white_blue {
+        border: 1px solid silver;
+        background: linear-gradient(135deg, rgb(255, 255, 255) 50%, rgb(70, 152, 254) 50%);
+    }
+    &.wind_grey_yellow {
+        border: 1px solid silver;
+        background: linear-gradient(135deg, rgb(147, 147, 147) 50%, rgb(255, 208, 50) 50%);
+    }
+    &.wind_grey_red {
+        border: 1px solid silver;
+        background: linear-gradient(135deg, rgb(147, 147, 147) 50%, rgb(254, 41, 37) 50%);
+    }
+    &.wind_grey_blue {
+        border: 1px solid silver;
+        background: linear-gradient(135deg, rgb(147, 147, 147) 50%, rgb(70, 152, 254) 50%);
+    }
+
     &.move_grey {
         background-color: rgb(99, 99, 101);
     }

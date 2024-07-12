@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'sorl.thumbnail',
     'widget_tweaks',
     'static_precompiler',
+    'compressor',
 
     'page',
 ]
@@ -127,7 +128,7 @@ LANGUAGE_CODE = 'th'
 
 LANGUAGES = (
   ('th', _('Thai')),
-  ('en', _('English')),
+  # ('en', _('English')),
 )
 
 TIME_ZONE = 'UTC'
@@ -191,7 +192,12 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'static_precompiler.finders.StaticPrecompilerFinder',
+    'compressor.finders.CompressorFinder',
 ]
+
+COMPRESS_PRECOMPILERS = (
+    ('text/x-scss', 'django_libsass.SassCompiler'),
+)
 
 STATIC_PRECOMPILER_COMPILERS = (
     ('static_precompiler.compilers.libsass.SCSS', {

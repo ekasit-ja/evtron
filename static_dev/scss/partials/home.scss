@@ -44,6 +44,24 @@
     background-color: rgba($evblue,0.3);
 }
 
+.benefit-line {
+    background-color: rgba($evblue,0.4);
+
+    .text-center {
+        padding: 1.2rem 0;
+    }
+
+    .row .benefit {
+        transform: skew(-10deg);
+        margin-top: 0.3rem;
+        color: black;
+        margin: 0 1rem 1rem 1rem;
+        padding: 0.5rem;
+        background-color: white;
+    }
+
+}
+
 .row .product {
     text-decoration: none;
     color: black;

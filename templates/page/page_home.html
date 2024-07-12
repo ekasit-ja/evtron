@@ -3,7 +3,7 @@
 
 {% block content %}
 <div class="banner">
-	<img src="{% static 'images/banner-image.jpg' %}" class="img-fluid">
+	<img src="{% static 'images/banner-image-2.jpg' %}" class="img-fluid">
 </div>
 
 <div class="intro-video">
@@ -35,6 +35,35 @@
 		</div>
 	</div>
 </div>
+
+<div class="container-fluid benefit-line">
+	<div class="container">
+		<h1 class="text-center">{% trans 'benefit-line' %}</h1>
+		<div class="row justify-content-center">
+	    	<div class="col-lg-3 col-md-4 benefit img-frame h250">
+	    		<img src="{% static 'images/benefits/benefit_1.jpg' %}">
+	    		<div class="benefit-text">{% trans 'benefit-1' %}</div>
+	    	</div>
+	    	<div class="col-lg-3 col-md-4 benefit img-frame h250">
+	    		<img src="{% static 'images/benefits/benefit_2.jpg' %}">
+	    		<div class="benefit-text">{% trans 'benefit-2' %}</div>
+	    	</div>
+	    	<div class="col-lg-3 col-md-4 benefit img-frame h250">
+	    		<img src="{% static 'images/benefits/benefit_3.jpg' %}">
+	    		<div class="benefit-text">{% trans 'benefit-3' %}</div>
+	    	</div>
+	    	<div class="col-lg-3 col-md-4 benefit img-frame h250">
+	    		<img src="{% static 'images/benefits/benefit_4.jpg' %}">
+	    		<div class="benefit-text">{% trans 'benefit-4' %}</div>
+	    	</div>
+	    	<div class="col-lg-3 col-md-4 benefit img-frame h250">
+	    		<img src="{% static 'images/benefits/benefit_5_2.jpg' %}">
+	    		<div class="benefit-text">{% trans 'benefit-5' %}</div>
+	    	</div>
+	    </div>
+    </div>
+    <br>
+ </div>
 
 <div class="container py-2">
 	<h1 class="text-center mt-4 mb-3">{% trans 'compare-ice-ev' %}</h1>
@@ -123,10 +152,10 @@
 		    		<img src="{% static 'images/products/max1.jpg' %}">
 		    		<h3>MAX</h3>
 		    	</a>
-		    	<a href="{% url 'product:product-flash' %}" class="col-lg-3 col-md-4 product img-frame h250">
+		    	<!-- <a href="{% url 'product:product-flash' %}" class="col-lg-3 col-md-4 product img-frame h250">
 		    		<img src="{% static 'images/products/flash1.jpg' %}">
 		    		<h3>FLASH</h3>
-		    	</a>
+		    	</a> -->
 		    </div>
 	    </div>
 	</div>

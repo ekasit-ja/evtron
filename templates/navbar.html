@@ -19,7 +19,7 @@
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg text-center">
                                 <a href="{% url 'product:product-wind' %}" class="dropdown-item">
-                                    <img src="{% static 'images/products/wind1.jpg' %}"><br>
+                                    <img src="{% static 'images/products/wind5.jpg' %}"><br>
                                     <span>WIND</span>
                                 </a>
                             </div>
@@ -47,23 +47,23 @@
                                     <span>MAX</span>
                                 </a>
                             </div>
-                            <div class="col-12 col-md-6 col-lg text-center">
+                            <!-- <div class="col-12 col-md-6 col-lg text-center">
                                 <a href="{% url 'product:product-flash' %}" class="dropdown-item">
                                     <img src="{% static 'images/products/flash1.jpg' %}"><br>
                                     <span>FLASH</span>
                                 </a>
-                            </div>
+                            </div> -->
                         </div>
                     </ul>
                 </li>
                 <li class="nav-item px-1"><a class="nav-link" href="{% static 'documents/Catalog_EVTRON_'|add:LANG|add:'.pdf' %}" target="_blank">{% trans 'catg' %}</a></li>
                 <li class="nav-item px-1"><a class="nav-link" href="{% url 'page:page-contact' %}">{% trans 'contact' %}</a></li>
-                <li class="nav-item px-2 flag"><a class="nav-link" href="/th{{request.get_full_path|slice:'3:'}}">
+                <!-- <li class="nav-item px-2 flag"><a class="nav-link" href="/th{{request.get_full_path|slice:'3:'}}">
                     <img src="{% static 'images/flag_th.png' %}">
-                </a></li>
-                <li class="nav-item px-2 flag"><a class="nav-link" href="/en{{request.get_full_path|slice:'3:'}}">
+                </a></li> -->
+                <!-- <li class="nav-item px-2 flag"><a class="nav-link" href="/en{{request.get_full_path|slice:'3:'}}">
                     <img src="{% static 'images/flag_en.png' %}">
-                </a></li>
+                </a></li> -->
             </ul>
         </div>
     </div>

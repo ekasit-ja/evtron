@@ -8,6 +8,6 @@ urlpatterns = [
     # path('carry', product_carry, name='product-carry'),
     path('carry', product_sl_carry, name='product-sl-carry'),
     path('max', product_max, name='product-max'),
-    # path('flash', product_flash, name='product-flash'),
+    path('flash', product_flash, name='product-flash'),
     path('hawk', product_hawk, name='product-hawk'),
 ]

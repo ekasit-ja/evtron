@@ -73,6 +73,9 @@ msgstr "view all projects"
 msgid "follow-us"
 msgstr "follow us"
 
+msgid "follow-us-and-be-friend"
+msgstr "follow us and be our friend!"
+
 msgid "about-us"
 msgstr "about us"
 

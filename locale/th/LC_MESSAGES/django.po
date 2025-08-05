@@ -73,6 +73,9 @@ msgstr "ดูผลงานทั้งหมด"
 msgid "follow-us"
 msgstr "ติดตามเรา"
 
+msgid "follow-us-and-be-friend"
+msgstr "ติดตามและเพิ่มเพื่อนกับเรา"
+
 msgid "about-us"
 msgstr "เกี่ยวกับเรา"
 

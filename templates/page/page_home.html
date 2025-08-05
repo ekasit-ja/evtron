@@ -2,8 +2,16 @@
 {% load static i18n %}
 
 {% block content %}
-<div class="banner">
+<!-- <div class="banner">
 	<img src="{% static 'images/banner-image-2.jpg' %}" class="img-fluid">
+</div> -->
+<div class="container-fluid">
+	<div class="container banner-follow-us">
+		<p class="first-line">{% trans 'follow-us-and-be-friend' %}</p>
+        <a href="{{FACEBOOK}}" target="_blank"><img src="{% static 'images/facebook_square_button.png' %}" alt="facebook"></a>
+		<a href="{{LINE}}" target="_blank"><img src="{% static 'images/line_rect_button.png' %}" alt="เพิ่มเพื่อนไลน์"></a>
+        <a href="{{YOUTUBE}}" target="_blank"><img src="{% static 'images/youtube_square_button.png' %}" alt="youtube"></a>
+	</div>
 </div>
 
 <div class="intro-video">

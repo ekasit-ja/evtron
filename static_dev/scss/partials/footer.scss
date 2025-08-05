@@ -5,27 +5,41 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 
-    a {color: white;}
+    a {
+        color: white;
 
-    .sub-button {
-        display: inline-block;
-        background-color: white;
-        color: $evblue;
-        width: 2.5rem;
-        line-height: 2.5rem;
-        border-radius: 50%;
-        text-align: center;
-        font-size: 1.4rem;
-        transition: all .2s;
-        margin-left: 1rem;
-        text-decoration: none;
+        &.sub-button {
+            img {
+                height: 2.5rem;
 
-        &:last-child {margin-right: 1rem;}
+            }
 
-        &:hover {
-            background-color: $evblue;
-            color: white;
-            box-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+            margin-left: 1rem;
+            text-decoration: none;
+
+            &:last-child {margin-right: 1rem;}
         }
     }
+
+    // .sub-button {
+    //     display: inline-block;
+    //     background-color: white;
+    //     color: $evblue;
+    //     width: 2.5rem;
+    //     line-height: 2.5rem;
+    //     border-radius: 50%;
+    //     text-align: center;
+    //     font-size: 1.4rem;
+    //     transition: all .2s;
+    //     margin-left: 1rem;
+    //     text-decoration: none;
+
+    //     &:last-child {margin-right: 1rem;}
+
+    //     &:hover {
+    //         background-color: $evblue;
+    //         color: white;
+    //         box-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    //     }
+    // }
 }
